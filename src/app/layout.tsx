@@ -1,16 +1,24 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+// import { Geist, Geist_Mono } from "next/font/google";
+// import localFont from "next/font/local";
 import "./globals.css";
+import SideBar from "@/components/SideBar";
+import Image from "next/image";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+// const geistSans = Geist({
+//   variable: "--font-geist-sans",
+//   subsets: ["latin"],
+// });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+// const geistMono = Geist_Mono({
+//   variable: "--font-geist-mono",
+//   subsets: ["latin"],
+// });
+
+// const gilroy = localFont({
+//   src: "../../fonts/Gilroy-Medium.ttf",
+//   variable: "--font-gilroy",
+// });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,10 +32,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className={`font-gilroy antialiased`}>
+        <div className="flex h-screen">
+          <div className="fixed hidden md:flex flex-col items-center bg-white">
+            <div className="mt-4">
+              <Image
+                src="/assets/logo2.svg"
+                alt="logo"
+                width={36}
+                height={36}
+              />
+            </div>
+            <SideBar />
+          </div>
+          <div className="flex-1 overflow-auto md:ml-16">{children}</div>
+        </div>
       </body>
     </html>
   );
