@@ -25,7 +25,7 @@ const TopPhoneComponent = () => {
           </div>
           <div className="">
             <Image
-              src="/assets/delivery.png"
+              src="/assets/Delivery.png"
               alt="phone"
               width={298}
               height={200}
