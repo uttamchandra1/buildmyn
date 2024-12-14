@@ -1,6 +1,5 @@
 import React from "react";
 import ProductImageCard from "./ProductImageCard";
-import { CloudDownload } from "lucide-react";
 
 const Images = [
   "/assets/frame1.png",

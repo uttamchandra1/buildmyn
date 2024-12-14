@@ -1,7 +1,6 @@
 import React from "react";
 import ThemeCard from "./ThemeCard";
 import AddThemeCard from "./AddThemeCard";
-import { Edit, PencilLine } from "lucide-react";
 import Image from "next/image";
 
 const themes = [
@@ -43,8 +42,9 @@ const Themes = () => {
         </div>
       </div>
       <div className="grid grid-cols-2 md:flex md:flex-wrap gap-[16px]">
-        {themes.map((theme) => (
+        {themes.map((theme, index) => (
           <ThemeCard
+            key={index}
             themeImage={theme.themeImage}
             themeName={theme.themeName}
           />

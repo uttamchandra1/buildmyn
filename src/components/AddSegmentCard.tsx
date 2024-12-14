@@ -1,4 +1,4 @@
-import { CirclePlus, Plus } from "lucide-react";
+import { CirclePlus } from "lucide-react";
 import React from "react";
 
 const AddSegmentCard = () => {

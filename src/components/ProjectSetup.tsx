@@ -35,8 +35,9 @@ const ProjectSetup = () => {
         </div>
       </div>
       <div className="flex grid grid-cols-2 md:flex md:flex-wrap gap-[12px] w-full mt-[24px]">
-        {projectSetup.map((project) => (
+        {projectSetup.map((project, index) => (
           <ProjectSetupCard
+            key={index}
             projectName={project.projectName}
             projectImage={project.projectImage}
           />

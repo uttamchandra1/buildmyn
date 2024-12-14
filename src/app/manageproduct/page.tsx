@@ -7,7 +7,7 @@ import Themes from "@/components/Themes";
 import TopPhoneComponent from "@/components/TopPhoneComponent";
 
 import Varient from "@/components/Varient";
-import { ArrowLeft, Trash } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 

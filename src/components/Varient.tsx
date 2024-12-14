@@ -39,8 +39,8 @@ const Varient = () => {
         </div>
       </div>
       <div className="flex flex-wrap gap-[16px]">
-        {varients.map((varient) => (
-          <VarientCard varientName={varient.varientName} />
+        {varients.map((varient, index) => (
+          <VarientCard key={index} varientName={varient.varientName} />
         ))}
       </div>
     </div>

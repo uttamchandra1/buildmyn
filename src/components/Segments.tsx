@@ -58,8 +58,9 @@ const Segments = () => {
         </div>
       </div>
       <div className="flex flex-col w-full gap-[24px] mt-[28px]">
-        {segments.map((segment) => (
+        {segments.map((segment, index) => (
           <SegmentCard
+            key={index}
             segmentName={segment.segmentName}
             segmentDescription={segment.segmentDescription}
           />
