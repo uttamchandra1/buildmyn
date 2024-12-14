@@ -17,7 +17,7 @@ const Images = [
 
 const ProductImage = () => {
   return (
-    <div className="grid grid-cols-2 gap-y-[16px] pb-[16px] scrollbar-hide">
+    <div className="flex flex-wrap gap-[16px] pb-[16px] scrollbar-hide">
       {Images.map((image, index) => (
         <ProductImageCard key={index} ImageSrc={image} />
       ))}
